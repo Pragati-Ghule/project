@@ -1,0 +1,31 @@
+<html>
+        <head>
+                <title>emply1 | FORM</title>
+        </head>
+        <body>
+                <h1>Create Task</h1>
+                <form method="POST" action="/update">
+        
+                        <tr>
+                            <td>id:</td>
+                            <td><input type="int" name="id" value="{{d.0}}"></td>
+                        </tr>
+                        <tr>
+                            <td>name:</td>
+                            <td><input type="varchar" name="name" value="{{d.1}}"></td>
+                        </tr>
+                        <tr>
+                            <td>address:</td>
+                            <td><input type="varchar" name="address" value="{{d.2}}"></td>
+                        </tr>
+                        <tr>
+                            <td>date:</td>
+                            <td><input type="date" name="date" value="{{d.3}}"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="send" value="update"></td>
+                        </tr>
+                    </table>
+                </form>
+        </body>
+</html>

@@ -1,0 +1,40 @@
+
+<html>
+        <head>
+                <title>emply1 | dashboard </title>
+        </head>
+        <body>
+                <h1><u><i>user dashboard</i></u></h1>
+                <p>To create New Task Click on Below Link</p>
+                <a href="/form">create task</a>
+                
+                <table border="1" align="center">
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>address</th>
+                        <th>date</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    {%for x in d:%}
+                       <tr>
+                        <td>{{x.0}}</td>
+                        <td>{{x.1}}</td>
+                        <td>{{x.2}}</td>
+                        <td>{{x.3}}</td>
+                        <td><a href="/edit/{{x.0}}">Edit</a></td>
+                        <td><a href="/delete/{{x.0}}">Delete</a></td>
+                        </tr>
+                    {% endfor %}
+                    
+                    
+                    
+                    
+                
+    
+                </table>
+        </body>
+</html>
+        
+
